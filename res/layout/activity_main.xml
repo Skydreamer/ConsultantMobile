@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/mainQueryTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/viewHeight"
+            android:layout_weight="1"
+            android:hint="@string/search"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/mainEnterQueryButton"
+            android:layout_width="@dimen/viewHeight"
+            android:layout_height="@dimen/viewHeight"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_corners"
+            android:src="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/mainCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:padding="5dp" />
+
+    <fragment
+        android:id="@+id/fragmentQuestionsList"
+        android:name="fragments.QuestionsListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

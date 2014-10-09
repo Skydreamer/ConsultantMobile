@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>  
+      
+    <dimen name="searchTextSize">18sp</dimen>
+    <dimen name="categoryTextSize">16sp</dimen>
+    
+    <dimen name="questionsTextSize">20sp</dimen>
+    <dimen name="questionsDateTextSize">13sp</dimen>
+    <dimen name="questionsCategoryTextSize">13sp</dimen>
+    
+    <dimen name="answersTextSize">18sp</dimen>
+    <dimen name="answersDateTextSize">14sp</dimen>
+    
+    <dimen name="chatTextSize">15sp</dimen>
+        
+    <dimen name="viewHeight">50dp</dimen>
+    <dimen name="viewWidth">50dp</dimen>
+
+</resources>

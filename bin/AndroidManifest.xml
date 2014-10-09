@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.romangolovan.consultantmobile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="data.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.AnswersActivity"
+            android:label="Ответы"
+            android:parentActivityName="activities.MainActivity" >
+        </activity>
+        <activity
+            android:name="activities.PreferencesActivity"
+            android:label="Настройки"
+            android:parentActivityName="activities.MainActivity" >
+        </activity>
+        <activity
+            android:name="activities.AllAnswersActivity"
+            android:label="Полученные ответы"
+            android:parentActivityName="activities.MainActivity" >
+        </activity>
+        <activity android:name="activities.ChatActivity"
+            android:label="%consultant_name%"
+            android:parentActivityName="activities.AllAnswersActivity" >
+        </activity>
+
+        <service android:name="services.RecieveAnswersService" >
+        </service>
+        <service
+            android:name="services.NotificationService"
+            android:process=":notificationService" >
+        </service>
+    </application>
+
+</manifest>

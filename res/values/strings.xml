@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    <string name="contextDeleteSearch">Удалить запрос</string>
+
+    <string name="app_name">SMARTConsultant</string>
+   
+    <string name="search">Поиск</string>
+    <string name="spinnerPromt"></string>
+    <string name="selectCategory">Выберите категорию поиска</string>
+    <string name="writeQuery">Введите текст запроса</string>
+    <string name="positive">Да</string>
+    <string name="negative">Отмена</string>
+    <string name="dialogHint">Нажмите, чтобы начать диалог</string>
+    <string name="sendButtonText">Отправить</string>
+    
+    <!-- пункты контекстного меню в ответах -->
+    <string name="contextMenuAnswersDeleteAnswer">Удалить ответ</string>
+    <string name="contextMenuAnswersVisitWebsite">Перейти на веб-сайт</string>
+    <string name="contextMenuAnswersReportSpam">Пожаловаться на спам</string>
+    <string name="contextMenuAnswersConsultantInfo">Дополнительная информация</string>
+	
+    <!-- пункты контекстного меню в вопросах -->
+    <string name="contextMenuQuestionsDelete">Удалить вопрос</string>
+    <string name="contextMenuQuestionsAskAgain">Задать заново</string>
+    <string name="contextMenuQuestionsGetAnswers">Запросить ответы</string>
+    
+    <!-- action bar main activity -->
+    <string name="menuMainActionSettings">Настройки</string>
+    <string name="menuMainOpenAllAnswers">Полученные ответы</string>
+    
+    <!-- action bar answers activity -->
+    <string name="menuAnswersGetAnswers">Получить вопросы</string>
+    
+    <string name="dialogAddQuestionTitle">Подтвердите отправку вопроса</string>
+    <string name="dialogDeleteQuestionTitle">Подтвердите удаление вопроса</string>
+    
+   	<!-- ключевые слова в настройках -->
+    <string name="prefKeyBackgroundMode">backgroundMode</string>
+    <string name="prefKeyNumberOfQuestions">numberOfQuestions</string>
+    <string name="prefKeyQuestionExpiration">questionExpiration</string>
+    <string name="prefKeyActiveDelay">activeDelay</string>
+    <string name="prefKeyInactiveDelay">inactiveDelay</string>
+    
+    <string-array name="preferenceNumberOfQuestionsValues">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    
+    <string-array name="preferenceNumberOfQuestionsEntries">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    
+    <string-array name="preferenceActiveDelayValues">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    
+    <string-array name="preferenceActiveDelayEntries">
+        <item>1 секунда</item>
+        <item>3 секунды</item>
+        <item>5 секунд</item>
+        <item>10 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минута</item>
+    </string-array>
+    
+    <string-array name="preferenceIncativeDelayValues">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+    
+    <string-array name="preferenceIncativeDelayEntries">
+        <item>10 секунд</item>
+        <item>20 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минута</item>
+        <item>2 минуты</item>
+        <item>5 минут</item>
+    </string-array>
+    
+    <string-array name="preferenceQuestionExpirationValues">
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>72</item>
+        <item>96</item>
+        <item>168</item>
+    </string-array>
+    
+    <string-array name="preferenceQuestionExpirationEntries">
+        <item>12 часов</item>
+        <item>1 день</item>
+        <item>2 дня</item>
+        <item>3 дня</item>
+        <item>4 дня</item>
+        <item>1 неделя</item>
+    </string-array>
+    
+</resources>

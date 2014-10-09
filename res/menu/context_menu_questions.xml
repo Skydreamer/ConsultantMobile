@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/contextMenuQuestionsAskAgain"
+        android:title="@string/contextMenuQuestionsAskAgain"/>
+    <item
+        android:id="@+id/contextMenuQuestionsGetAnswers"
+        android:title="@string/contextMenuQuestionsGetAnswers"/>
+    <item
+        android:id="@+id/contextMenuQuestionsDelete"
+        android:title="@string/contextMenuQuestionsDelete"/>
+
+</menu>

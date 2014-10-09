@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Очень важные настройки" >
+
+        <!-- запросы в неактиве -->
+        <CheckBoxPreference
+            android:key="@string/prefKeyBackgroundMode"
+            android:summary="Получать ответы с сервера при выключенном приложении"
+            android:title="Фоновые запросы" 
+            android:defaultValue="True"/>
+        <!-- количество вопросов для запросов -->
+        <ListPreference
+            android:entries="@array/preferenceNumberOfQuestionsEntries"
+            android:entryValues="@array/preferenceNumberOfQuestionsValues"
+            android:key="@string/prefKeyNumberOfQuestions"
+            android:summary="Количество вопросов для периодического запроса ответов"
+            android:title="Число активных вопросов"
+            android:defaultValue="10" />
+        <!-- время активного запроса -->
+        <ListPreference
+            android:entries="@array/preferenceQuestionExpirationEntries"
+            android:entryValues="@array/preferenceQuestionExpirationValues"
+            android:key="@string/prefKeyQuestionExpiration"
+            android:summary="Время, в течении которого вопрос будет автоматически получать ответы"
+            android:title="Время активного получения ответов"
+            android:defaultValue="72" />
+        <!-- кд запросов в активе -->
+        <ListPreference
+            android:entries="@array/preferenceActiveDelayEntries"
+            android:entryValues="@array/preferenceActiveDelayValues"
+            android:key="@string/prefKeyActiveDelay"
+            android:summary="Время между запросами в активном режиме"
+            android:title="Задержка при работе" 
+            android:defaultValue="10"/>
+        <!-- кд запросос в неактиве -->
+        <ListPreference
+            android:entries="@array/preferenceIncativeDelayEntries"
+            android:entryValues="@array/preferenceIncativeDelayValues"
+            android:key="@string/prefKeyInactiveDelay"
+            android:summary="Время между запросами в фоновом режиме"
+            android:title="Задержка в фоне"
+            android:defaultValue="30" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

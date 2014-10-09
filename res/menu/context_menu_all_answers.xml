@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/contextMenuAllAnswersDeleteAnswers"
+        android:title="@string/contextMenuAnswersDeleteAnswer"/>
+    <item
+        android:id="@+id/contextMenuAllAnswersVisitWebsite"
+        android:title="@string/contextMenuAnswersVisitWebsite"/>
+    <item
+        android:id="@+id/contextMenuAllAnswersReportSpam"
+        android:title="@string/contextMenuAnswersReportSpam"/>
+    <item
+        android:id="@+id/contextMenuAllAnswersConsultantInfo"
+        android:title="@string/contextMenuAnswersConsultantInfo"/>
+
+</menu>
